@@ -264,8 +264,14 @@ async function loadDashboard() {
   try {
 
     // ✅ PROFILE DATA
-    const profile =
-      await API.User.getProfile();
+    // ✅ PROFILE DATA
+const profile =
+  State.user;
+
+console.log(
+  "PROFILE DATA:",
+  profile
+);
 
     // ✅ HISTORY DATA
     const history =
