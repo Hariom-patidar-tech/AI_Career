@@ -115,6 +115,11 @@ async function handleAuth() {
       : await API.Auth.register(nameEl?.value, emailEl.value, passEl.value);
 
     State.user = res.user;
+    // Save user in localStorage
+localStorage.setItem(
+  "user",
+  JSON.stringify(res.user)
+);
   try {
 
   if (!res.user) {
@@ -253,7 +258,7 @@ async function bootApp(user) {
     err
   );
 }
-  setTimeout(animateBars, 400);
+  
 }
 
 /* ════════════════════════════════════════════
@@ -435,7 +440,7 @@ if (fills[1]) {
 
   const val =
     Math.min(
-      totalPredictions * 20,
+      totalPredictions * 55,
       100
     );
 
@@ -455,7 +460,7 @@ if (fills[2]) {
   fills[2].style.width =
     done
     ? "100%"
-    : "20%";
+    : "35%";
 
   pcts[2].innerText =
     done
@@ -1361,7 +1366,27 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanding();
   initAuth();
   initScrollSpy();
+  // Auto login after refresh
+const savedUser =
+  localStorage.getItem(
+    "user"
+  );
+
+if (savedUser) {
+
+  State.user =
+    JSON.parse(savedUser);
+
+  bootApp(State.user);
+
+  goPage('app');
+
+  goView('dashboard');
+
+} else {
+
   goPage('landing');
+}
 
   // Avatar modal
   const avatarImg = document.getElementById('avatarPreview');
