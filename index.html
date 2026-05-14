@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareerAI — Discover Your Ideal Career Path</title>
+  <meta name="description" content="AI-powered career path recommendation system with personalized insights and learning roadmaps."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="landing.css"/>
+  <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     LANDING PAGE
+══════════════════════════════════════════ -->
+<div id="landing-page">
+
+  <nav id="navbar">
+    <div class="nb-logo">
+      <div class="nb-logo-mark">C</div>
+      <span class="nb-logo-name">CareerAI</span>
+    </div>
+    <div class="nb-links hide-m">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#lcta">Pricing</a>
+    </div>
+    <div class="nb-actions">
+      <button class="btn btn-outline btn-sm hide-m" id="nav-login-btn">Log In</button>
+      <button class="btn btn-primary btn-sm" id="nav-signup-btn">Get Started</button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-canvas" id="hero-canvas">
+      <div class="hero-grid"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-pill fade-up">
+        <span class="badge badge-violet">✦ Powered by AI &nbsp;·&nbsp; Free to Start</span>
+      </div>
+      <h1 class="hero-title fade-up d1">
+        Discover Your<br/>
+        <span class="gtxt">Ideal Career Path</span><br/>
+        with AI
+      </h1>
+      <p class="hero-sub fade-up d2">
+        Stop guessing your next move. Our AI analyzes your unique profile and delivers precision career recommendations with actionable learning roadmaps.
+      </p>
+      <div class="hero-actions fade-up d3">
+        <button class="btn btn-primary btn-lg" id="hero-signup-btn">Get Started Free →</button>
+        <button class="btn btn-outline btn-lg" id="hero-login-btn">Sign In</button>
+      </div>
+      <div class="hero-stats fade-up d4" id="hero-stats">
+        <div>
+          <div class="hstat-num" data-count="10000" data-suffix="+">0+</div>
+          <div class="hstat-lbl">Careers Mapped</div>
+        </div>
+        <div style="width:1px;background:var(--border2);align-self:stretch"></div>
+        <div>
+          <div class="hstat-num" data-count="94" data-suffix="%">0%</div>
+          <div class="hstat-lbl">Match Accuracy</div>
+        </div>
+        <div style="width:1px;background:var(--border2);align-self:stretch"></div>
+        <div>
+          <div class="hstat-num" data-count="50000" data-suffix="+">0+</div>
+          <div class="hstat-lbl">Users Guided</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="sec-head" data-reveal>
+      <span class="badge badge-cyan" style="margin-bottom:16px">Features</span>
+      <h2 class="sec-title">Everything you need to<br/>navigate your career</h2>
+      <p class="sec-sub">Built for ambitious professionals who want clarity and direction — not generic advice.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="card feat-card" data-reveal>
+        <div class="feat-icon fi-v">🤖</div>
+        <h3 class="feat-title">AI-Powered Matching</h3>
+        <p class="feat-desc">Our ML engine analyzes your skills, interests, and goals to surface career paths with the highest success probability for your unique profile.</p>
+      </div>
+      <div class="card feat-card" data-reveal>
+        <div class="feat-icon fi-c">🗺️</div>
+        <h3 class="feat-title">Personalized Roadmaps</h3>
+        <p class="feat-desc">Step-by-step learning paths tailored to your current skill level and target career. No generic advice — everything is built for you.</p>
+      </div>
+      <div class="card feat-card" data-reveal>
+        <div class="feat-icon fi-p">📊</div>
+        <h3 class="feat-title">Real-Time Market Data</h3>
+        <p class="feat-desc">Live salary ranges, demand trends, and growth projections so you always make decisions backed by current market intelligence.</p>
+      </div>
+      <div class="card feat-card" data-reveal>
+        <div class="feat-icon fi-a">🎯</div>
+        <h3 class="feat-title">Adaptive Intelligence</h3>
+        <p class="feat-desc">The system continuously refines recommendations based on your feedback and progress, getting smarter the more you use it.</p>
+      </div>
+      <div class="card feat-card" data-reveal>
+        <div class="feat-icon fi-g">📚</div>
+        <h3 class="feat-title">Curated Resources</h3>
+        <p class="feat-desc">Hand-picked courses, certifications, and community connections for each career path — so you always know the best next step.</p>
+      </div>
+      <div class="card feat-card" data-reveal>
+        <div class="feat-icon fi-m">📈</div>
+        <h3 class="feat-title">Progress Dashboard</h3>
+        <p class="feat-desc">Track skill development, set milestones, and visualize your entire journey toward your ideal role with detailed analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works">
+    <div class="sec-head" data-reveal>
+      <span class="badge badge-pink" style="margin-bottom:16px">How It Works</span>
+      <h2 class="sec-title">Four steps to your dream career</h2>
+      <p class="sec-sub">From profile to personalized roadmap in minutes.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card" data-reveal>
+        <div class="how-num">01</div>
+        <h3 class="how-title">Create Your Profile</h3>
+        <p class="how-desc">Input your skills, education level, interests, and career goals through our guided multi-step form.</p>
+      </div>
+      <div class="how-card" data-reveal>
+        <div class="how-num">02</div>
+        <h3 class="how-title">AI Analyzes Your Data</h3>
+        <p class="how-desc">Our engine processes your inputs against millions of career trajectory patterns to find the best matches.</p>
+      </div>
+      <div class="how-card" data-reveal>
+        <div class="how-num">03</div>
+        <h3 class="how-title">Get Recommendations</h3>
+        <p class="how-desc">Receive ranked career paths with match scores, salary data, and complete step-by-step learning roadmaps.</p>
+      </div>
+      <div class="how-card" data-reveal>
+        <div class="how-num">04</div>
+        <h3 class="how-title">Track &amp; Level Up</h3>
+        <p class="how-desc">Follow your personalized path, update progress, and watch the AI refine your recommendations over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="lcta">
+    <div class="lcta-inner">
+      <span class="badge badge-violet" style="margin-bottom:20px">Start Today — It's Free</span>
+      <h2 class="lcta-title">Ready to find your <span class="gtxt">perfect career?</span></h2>
+      <p class="lcta-sub">Join thousands of professionals who discovered their ideal career path. Takes less than 5 minutes to get your first recommendation.</p>
+      <button class="btn btn-primary btn-lg" id="lcta-btn">Start Your Journey →</button>
+    </div>
+  </section>
+
+  <footer id="site-footer">
+    <span class="footer-copy">© 2026 Career Path Recommendation. All rights reserved.</span>
+    <span class="footer-copy">Built for the future of work</span>
+  </footer>
+
+</div><!-- /landing-page -->
+
+
+<!-- ══════════════════════════════════════════
+     AUTH PAGE
+══════════════════════════════════════════ -->
+<div id="auth-page" style="display:none">
+  <div class="auth-orb1"></div>
+  <div class="auth-orb2"></div>
+  <div class="auth-back" id="auth-back">← Back to Home</div>
+
+  <div class="card auth-box scale-in">
+    <div class="auth-logo" id="auth-logo-btn">
+      <div class="auth-logo-mark">C</div>
+      <span class="auth-logo-name">CareerAI</span>
+    </div>
+    <h2 class="auth-head-title" id="auth-title">Welcome back</h2>
+    <p class="auth-head-sub" id="auth-sub-text">Sign in to your CareerAI account</p>
+
+    <div class="auth-tabs">
+      <button class="auth-tab on" id="tab-login">Log In</button>
+      <button class="auth-tab" id="tab-signup">Sign Up</button>
+    </div>
+
+    <form id="auth-form" novalidate>
+      <div class="fgroup" id="auth-name-grp" style="display:none">
+        <label class="flabel" for="auth-name">Full Name</label>
+        <input class="finput" type="text" id="auth-name" placeholder="Name" autocomplete="name"/>
+      </div>
+      <div class="fgroup">
+        <label class="flabel" for="auth-email">Email Address</label>
+        <input class="finput" type="email" id="auth-email" placeholder="you@email.com" autocomplete="email"/>
+      </div>
+      <div class="fgroup">
+        <label class="flabel" for="auth-pass">Password</label>
+        <input class="finput" type="password" id="auth-pass" placeholder="••••••••" autocomplete="current-password"/>
+      </div>
+      <div class="fgroup" id="auth-confirm-grp" style="display:none">
+        <label class="flabel" for="auth-confirm">Confirm Password</label>
+        <input class="finput" type="password" id="auth-confirm" placeholder="••••••••" autocomplete="new-password"/>
+      </div>
+      <div id="auth-forgot-row" class="auth-forgot"><span>Forgot password?</span></div>
+      <button type="submit" class="btn btn-primary" id="auth-submit-btn" style="width:100%;padding:13px;margin-bottom:0">Sign In</button>
+    </form>
+
+    <div class="divider">
+  
+</div>
+
+
+  </div>
+</div><!-- /auth-page -->
+
+
+<!-- ══════════════════════════════════════════
+     APP SHELL
+══════════════════════════════════════════ -->
+<div id="app-shell" style="display:none">
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <div class="sb-head">
+      <div class="sb-brand">
+        <div class="sb-brand-mark">C</div>
+        <span class="sb-brand-name">CareerAI</span>
+      </div>
+      <div class="sb-user">
+        <div class="sb-avatar" data-avatar>U</div>
+        <div>
+          <div class="sb-uname" data-uname>User</div>
+          <div class="sb-uplan" data-uplan>Free Plan</div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sb-nav">
+      <div class="sb-sec">Main</div>
+      <div class="nav-item on" data-view="dashboard">
+        <span class="ni-icon">⊞</span> Dashboard
+      </div>
+      <div class="nav-item" data-view="profile">
+        <span class="ni-icon">◎</span> My Profile
+      </div>
+      <div class="nav-item" data-view="input">
+        <span class="ni-icon">✦</span> Input Data
+      </div>
+      <div class="nav-item" data-view="results">
+        <span class="ni-icon">◈</span> Results
+        <span class="ni-badge">0</span>
+      </div>
+      <div class="sb-sec">Support</div>
+      <div class="nav-item" data-view="feedback">
+        <span class="ni-icon">◇</span> Feedback
+      </div>
+    </nav>
+
+    <div class="sb-foot">
+      <div class="sb-foot-row">
+        <span class="sb-foot-lbl">Dark Mode</span>
+        <div class="tog-track on" id="theme-tog">
+          <div class="tog-thumb"></div>
+        </div>
+      </div>
+      <button class="btn btn-outline btn-sm" id="sb-logout" style="width:100%;justify-content:center">Sign Out</button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- ── DASHBOARD ── -->
+    <div class="view on" data-view="dashboard">
+      <div class="view-head">
+        <div class="view-ey"><span class="badge badge-violet">Dashboard</span></div>
+        <h1 class="view-title">Welcome back!</h1>
+        <p class="view-sub">Your AI-powered career compass is ready. Here's your overview.</p>
+      </div>
+
+      <div class="stat-row">
+
+  <!-- Career Matches -->
+  <div class="card stat-card">
+
+    <div class="sc-icon fi-v">
+      🎯
+    </div>
+
+    <div
+      class="sc-val"
+      id="career-count"
+    >
+      0
+    </div>
+
+    <div class="sc-lbl">
+      Career Matches
+    </div>
+
+    <div class="sc-change up">
+      ↑ AI Powered
+    </div>
+
+  </div>
+
+  <!-- Profile Score -->
+  <div class="card stat-card">
+
+    <div class="sc-icon fi-c">
+      📋
+    </div>
+
+    <div
+      class="sc-val"
+      id="profile-score"
+    >
+      0%
+    </div>
+
+    <div class="sc-lbl">
+      Profile Score
+    </div>
+
+    <div class="sc-change up">
+      Fill profile to improve
+    </div>
+
+  </div>
+
+  <!-- Days Active -->
+  <div class="card stat-card">
+
+    <div class="sc-icon fi-p">
+      🔥
+    </div>
+
+    <div
+      class="sc-val"
+      id="days-active"
+    >
+      0
+    </div>
+
+    <div class="sc-lbl">
+      Days Active
+    </div>
+
+    <div class="sc-change up">
+      Keep going!
+    </div>
+
+  </div>
+
+</div>
+
+      <div class="two-col">
+        <div class="card panel">
+          <div class="panel-head">
+            <span class="panel-title">Progress Overview</span>
+          </div>
+          <div class="prog-row">
+            <div class="prog-meta"><span class="prog-name">Profile Complete</span><span class="prog-pct">0%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-w="0" style="width:0%"></div></div>
+          </div>
+          <div class="prog-row">
+            <div class="prog-meta"><span class="prog-name">Career Paths Found</span><span class="prog-pct" id="dash-paths-pct">0</span></div>
+            <div class="prog-track"><div class="prog-fill" data-w="0" style="width:0%;background:linear-gradient(135deg,#22d3ee,#4ade80)"></div></div>
+          </div>
+          <div class="prog-row">
+            <div class="prog-meta"><span class="prog-name">Input Data</span><span class="prog-pct" id="dash-input-pct">Pending</span></div>
+            <div class="prog-track"><div class="prog-fill" data-w="0" style="width:0%;background:linear-gradient(135deg,#f472b6,#fbbf24)"></div></div>
+          </div>
+        </div>
+
+        <div class="card panel">
+          <div class="panel-head">
+            <span class="panel-title">Top Matches</span>
+            <span class="panel-link" id="dash-view-all">View all →</span>
+          </div>
+          <div id="dash-matches-list">
+            <div style="text-align:center;padding:30px 0;color:var(--txt3);font-size:13px">
+              No matches yet.<br/>Go to <strong>Input Data</strong> to generate recommendations.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-cta-banner">
+        <div>
+          <div class="dcta-title">Complete your profile for better matches</div>
+          <div class="dcta-sub">Add your goals and education to improve AI accuracy by up to 30%.</div>
+        </div>
+        <button class="btn btn-primary" id="dash-go-profile">Update Profile →</button>
+      </div>
+    </div><!-- /dashboard -->
+
+
+    <!-- ── PROFILE ── -->
+    <div class="view" data-view="profile">
+      <div class="view-head">
+        <div class="view-ey"><span class="badge badge-cyan">Profile</span></div>
+        <h1 class="view-title">Profile Management</h1>
+        <p class="view-sub">Keep your profile updated for the most accurate AI recommendations.</p>
+      </div>
+
+      <div class="card profile-hdr">
+        <div class="avatar-container">
+          <img id="avatarPreview" src="https://ui-avatars.com/api/?name=User&background=7c5cfc&color=fff&size=100" class="prof-avatar-lg" style="width:74px;height:74px;border-radius:50%;object-fit:cover"/>
+          <div class="camera-icon" onclick="document.getElementById('fileInput').click()">📷</div>
+          <input type="file" id="fileInput" accept="image/*" hidden>
+        </div>
+        <div>
+          <div class="prof-name" data-uname>User</div>
+          <div class="prof-email" data-uemail>user@email.com</div>
+          <span class="badge badge-violet" style="margin-top:8px">Free Plan</span>
+        </div>
+      </div>
+
+      <div class="card fcard">
+        <div class="fcard-title">Personal Information</div>
+        <div class="form-2col">
+          <div class="fgroup">
+            <label class="flabel" for="pf-name">Full Name</label>
+            <input class="finput" type="text" id="pf-name" placeholder="Your name"/>
+          </div>
+          <div class="fgroup">
+            <label class="flabel" for="pf-email">Email Address</label>
+            <input class="finput" type="email" id="pf-email" placeholder="you@email.com"/>
+          </div>
+        </div>
+        <div class="fgroup">
+          <label class="flabel" for="pf-edu">Education Background</label>
+          <input class="finput" type="text" id="pf-edu" placeholder="e.g. B.Sc. Computer Science"/>
+        </div>
+        <div class="fgroup" style="margin-bottom:0">
+          <label class="flabel" for="pf-goals">Career Goals</label>
+          <textarea class="finput" id="pf-goals" rows="3" placeholder="Describe your ideal career outcome..."></textarea>
+        </div>
+      </div>
+
+      <div class="save-row">
+        <button class="btn btn-primary" id="pf-save-btn" style="padding:12px 34px">Save Changes</button>
+        <div class="save-ok" id="save-ok">✓ Saved successfully</div>
+      </div>
+    </div><!-- /profile -->
+
+
+    <!-- ── INPUT DATA ── -->
+    <div class="view" data-view="input">
+      <div class="view-head">
+        <div class="view-ey"><span class="badge badge-pink">Data Input</span></div>
+        <h1 class="view-title">Build Your Career Profile</h1>
+        <p class="view-sub">Complete this 2-step form and our AI will generate personalized career recommendations.</p>
+      </div>
+
+      <!-- Stepper indicator -->
+      <div class="stepper">
+        <div class="step-node">
+          <div class="step-circle active">1</div>
+          <div class="step-lbl active">Education</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-node">
+          <div class="step-circle todo">2</div>
+          <div class="step-lbl">Goals</div>
+        </div>
+      </div>
+
+      <!-- Step 1: Education -->
+      <div class="card sp-card step-panel on" id="step-panel-0">
+        <div class="sp-title">Educational Background</div>
+        <div class="sp-desc">Tell us about your education. This helps the AI calibrate the starting point of your roadmaps.</div>
+        <div class="fgroup">
+          <label class="flabel" for="inp-edu">Highest Education Level</label>
+          <select class="finput" id="inp-edu">
+            <option value="">Select level...</option>
+            <option>High School</option>
+            <option>Associate Degree</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's Degree</option>
+            <option>PhD</option>
+            <option>Bootcamp Graduate</option>
+            <option>Self-taught</option>
+          </select>
+        </div>
+        <div class="fgroup" style="margin-bottom:0">
+          <label class="flabel" for="inp-degree">Field of Study</label>
+          <input class="finput" type="text" id="inp-degree" placeholder="e.g. Computer Science, Design, Business..."/>
+        </div>
+      </div>
+
+      <!-- Step 2: Goals -->
+      <div class="card sp-card step-panel" id="step-panel-1">
+        <div class="sp-title">Your Career Goals</div>
+        <div class="sp-desc">The more specific you are, the better the AI can tailor your recommendations.</div>
+        <div class="fgroup">
+          <label class="flabel" for="inp-skill">Describe your ideal career / skills</label>
+          <textarea class="finput" id="inp-skill" rows="4" placeholder="e.g. I want to become a machine learning engineer or web developer..."></textarea>
+        </div>
+        <div class="fgroup" style="margin-bottom:0">
+          <label class="flabel" for="inp-timeline">Preferred Timeline</label>
+          <select class="finput" id="inp-timeline">
+            <option value="">Select timeline...</option>
+            <option>3 months</option>
+            <option>6 months</option>
+            <option>1 year</option>
+            <option>2 years</option>
+            <option>3+ years</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="step-actions">
+        <button class="btn btn-outline" id="step-back" disabled style="opacity:.3">← Back</button>
+        <span class="step-counter" id="step-counter">Step 1 of 2</span>
+        <button class="btn btn-primary" id="step-next">Continue →</button>
+      </div>
+    </div><!-- /input -->
+
+
+    <!-- ── RESULTS ── -->
+    <div class="view" data-view="results">
+      <div id="res-list">
+        <div class="view-head">
+          <div class="view-ey"><span class="badge badge-amber">AI Results</span></div>
+          <h1 class="view-title">Your Career Recommendations</h1>
+          <p class="view-sub">Based on your profile, the AI found 0 paths ranked by compatibility score.</p>
+        </div>
+        <div class="res-grid" id="res-grid"></div>
+      </div>
+      <div id="res-detail"></div>
+    </div><!-- /results -->
+
+
+    <!-- ── FEEDBACK ── -->
+    <div class="view" data-view="feedback">
+      <div class="view-head">
+        <div class="view-ey"><span class="badge badge-pink">Feedback</span></div>
+        <h1 class="view-title">Share Your Experience</h1>
+        <p class="view-sub">Your feedback trains the AI to deliver better recommendations for you and everyone else.</p>
+      </div>
+
+      <div id="fb-form-wrap">
+        <div class="card fb-card">
+          <div class="fb-title">How accurate were your career recommendations?</div>
+          <div class="stars" id="fb-stars">
+            <span class="star" data-i="1">★</span>
+            <span class="star" data-i="2">★</span>
+            <span class="star" data-i="3">★</span>
+            <span class="star" data-i="4">★</span>
+            <span class="star" data-i="5">★</span>
+          </div>
+          <div class="rating-lbl" id="fb-rating-lbl"></div>
+        </div>
+
+        <div class="card fb-card">
+          <div class="fb-title">Feedback Details</div>
+          <div class="fgroup">
+            <label class="flabel" for="fb-category">What aspect are you rating?</label>
+            <select class="finput" id="fb-category">
+              <option value="accuracy">Recommendation Accuracy</option>
+              <option value="relevance">Career Relevance</option>
+              <option value="learning">Learning Path Quality</option>
+              <option value="ui">User Interface</option>
+              <option value="overall">Overall Experience</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label class="flabel" for="fb-recommend">Would you recommend CareerAI?</label>
+            <select class="finput" id="fb-recommend">
+              <option value="">Select...</option>
+              <option value="yes">Yes, definitely</option>
+              <option value="maybe">Maybe</option>
+              <option value="no">Not right now</option>
+            </select>
+          </div>
+          <div class="fgroup" style="margin-bottom:0">
+            <label class="flabel" for="fb-text">Your Detailed Feedback <span style="color:var(--pink)">*</span></label>
+            <textarea class="finput" id="fb-text" rows="5" placeholder="Tell us what worked well, what didn't, and any suggestions for improvement..."></textarea>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="fb-submit" style="padding:13px 36px">Submit Feedback</button>
+      </div>
+
+      <div id="fb-success" style="display:none">
+        <div class="card success-screen">
+          <div class="ss-icon">🎉</div>
+          <h2 class="ss-title">Thank you for your feedback!</h2>
+          <p class="ss-sub">Your insights help us improve the AI recommendation accuracy for you and thousands of other users. We really appreciate it!</p>
+          <button class="btn btn-outline" id="fb-again">Submit Another Response</button>
+        </div>
+      </div>
+    </div><!-- /feedback -->
+
+  </main><!-- /main -->
+
+  <!-- Mobile Bottom Nav -->
+  <nav id="mob-nav">
+    <div class="mn-item on" data-view="dashboard"><span class="mn-icon">⊞</span>Home</div>
+    <div class="mn-item" data-view="profile"><span class="mn-icon">◎</span>Profile</div>
+    <div class="mn-item" data-view="input"><span class="mn-icon">✦</span>Input</div>
+    <div class="mn-item" data-view="results"><span class="mn-icon">◈</span>Results</div>
+    <div class="mn-item" data-view="feedback"><span class="mn-icon">◇</span>Feedback</div>
+  </nav>
+
+</div><!-- /app-shell -->
+
+<!-- AVATAR ZOOM MODAL -->
+<div id="avatarModal" class="avatar-modal">
+  <span class="close-btn" onclick="closeAvatar()">✖</span>
+  <img id="zoomedAvatar" alt="Avatar">
+</div>
+
+<!-- Scripts — ORDER MATTERS: utils → api → pages -->
+<script src="utils.js"></script>
+<script src="api.js"></script>
+<script src="pages.js"></script>
+
+</body>
+</html>
